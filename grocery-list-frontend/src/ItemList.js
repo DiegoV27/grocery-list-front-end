@@ -1,8 +1,8 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 
-const BASE_URL = "http://localhost:9292/items"
+const BASE_URL = "http://localhost:9292/"
 
-export function GroceryList() {
+export function ItemList() {
     const [items, setItems] = useState([])
     
     useEffect(() => {
