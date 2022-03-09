@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react"
 
 const BASE_URL = "http://localhost:9292/"
 
-export function ItemList() {
+export default function ItemList() {
     const [items, setItems] = useState([])
     
     useEffect(() => {
