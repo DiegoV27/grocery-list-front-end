@@ -11,7 +11,7 @@ const linkStyles = {
     color: "white",
   };
 
-  export function NavBar() {
+  export default function NavBar() {
 
     return(
         <div>
@@ -26,14 +26,34 @@ const linkStyles = {
                 Home Page
             </NavLink>
             <NavLink
-                to = "/ItemList"
+                to = "/partyitems"
                 exact
                 style = {linkStyles}
                 activeStyle = {{
                     background: "darkblue",
                 }}
             >
-                Grocery List
+                Add party items
+            </NavLink>
+            <NavLink
+                to = "/drinks"
+                exact
+                style = {linkStyles}
+                activeStyle = {{
+                    background: "darkblue",
+                }}
+            >
+                Add drinks
+            </NavLink>
+            <NavLink
+                to = "/snacks"
+                exact
+                style = {linkStyles}
+                activeStyle = {{
+                    background: "darkblue",
+                }}
+            >
+                Add snacks
             </NavLink>
         </div>
     )
